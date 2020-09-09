@@ -1,0 +1,60 @@
+{
+  "name": "panorama-polyfill",
+  "version": "0.1.0",
+  "description": "Polyfills for common JavaScript features for Valve's Panorama UI (for Dota 2 Custom Games).",
+  "keywords": [
+    "dota",
+    "panorama",
+    "polyfill"
+  ],
+  "repository": "https://github.com/ark120202/panorama-polyfill",
+  "license": "MIT",
+  "author": "ark120202",
+  "type": "module",
+  "files": [
+    "lib/**/*.{js,ts}"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "run-p lint:*",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier --check .",
+    "prepublishOnly": "yarn build"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "proseWrap": "always",
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "project": "tsconfig.json"
+    },
+    "extends": "@ark120202/eslint-config/node",
+    "ignorePatterns": "/lib"
+  },
+  "dependencies": {
+    "object-inspect": "^1.8.0"
+  },
+  "devDependencies": {
+    "@ark120202/eslint-config": "^2.4.2",
+    "@ark120202/typescript-config": "^2.2.0",
+    "@types/object-inspect": "^1.6.1",
+    "core-js": "^3.6.5",
+    "eslint": "^7.8.1",
+    "npm-run-all": "^4.1.5",
+    "panorama-types": "^1.5.2",
+    "prettier": "^2.1.1",
+    "typescript": "^4.0.2"
+  },
+  "peerDependencies": {
+    "core-js": "^3.6.5"
+  },
+  "peerDependenciesMeta": {
+    "core-js": {
+      "optional": true
+    }
+  }
+}

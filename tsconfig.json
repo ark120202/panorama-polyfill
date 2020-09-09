@@ -1,0 +1,15 @@
+{
+  "extends": "@ark120202/typescript-config/base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib",
+    "types": ["panorama-types"],
+
+    "lib": ["es2017"],
+    "target": "es2017",
+    "module": "esnext",
+
+    "importHelpers": false,
+    "declaration": true
+  }
+}
