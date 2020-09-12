@@ -10,7 +10,6 @@
   "repository": "https://github.com/ark120202/panorama-polyfill",
   "license": "MIT",
   "author": "ark120202",
-  "type": "module",
   "files": [
     "lib/**/*.{js,ts}"
   ],
